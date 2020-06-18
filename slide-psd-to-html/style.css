@@ -1,0 +1,432 @@
+/* Common CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+p {
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0 0 5px;
+}
+
+a {
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ********************* Top Header Area ************************ */
+
+.top-header-area {
+    background-color: #a88c95;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.top-header-area .inner-header {
+    overflow: hidden;
+}
+
+.top-header-area .social-area {
+    float: left;
+    width: 50%;
+}
+
+.top-header-area .social-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.top-header-area .social-area ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.top-header-area .social-area ul li a {
+    background-color: #d2d2d2;
+    color: #6a3144;
+    width: 30px;
+    height: 24px;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+}
+
+.top-header-area .social-area ul li a:hover {
+    background-color: #6a3144;
+    color: #ffffff;
+}
+
+.top-header-area .search-area {
+    float: right;
+    width: 50%;
+}
+
+.top-header-area .search-area form {
+    float: right;
+    width: 300px;
+}
+
+.top-header-area .search-area input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    float: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top-header-area .search-area input[type="submit"] {
+    padding: 10px;
+    width: 80px;
+    float: left;
+    background-color: #97455f;
+    color: #fff;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-header-area .search-area input[type="submit"]:hover {
+    background-color: #6a3144;
+    color: #ffffff;
+}
+
+/* ********************* Logo Area ************************ */
+
+.logo-area {
+    text-align: center;
+    margin: 15px auto;
+}
+
+/* ********************* Main Menu ************************ */
+
+.main-menu {
+    background-color: #97455f;
+    height: 52px;
+}
+
+.main-menu ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600px;
+    display: block;
+    line-height: 52px;
+    padding: 0px 20px;
+    letter-spacing: 0.5px;
+}
+
+.main-menu ul li a:hover {
+    background-color: #6a3144;
+}
+
+/* ********************* Slider Area ************************ */
+
+.slider-area {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+
+.bx-wrapper {
+    margin: 0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+        border: 5px solid #6a3144;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    display: block;
+    margin: 0 10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: transparent;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #6a3144;
+}
+
+.slider-area .slider-images img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 695px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ********************* Welcome Area ************************ */
+
+.welcome-area {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.welcome-area .inner-welcome {
+    overflow: hidden;
+}
+
+.welcome-area .left-welcome {
+    width: 44%;
+    float: left;
+    padding: 0 2% 0 4%;
+
+}
+
+.welcome-area .left-welcome h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.welcome-area .left-welcome p {
+    font-size: 18px;
+}
+
+.welcome-area .left-welcome a {
+    background-color: #6a3144;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.welcome-area .left-welcome a:hover {
+    background-color: #97455f;
+}
+
+.welcome-area .right-welcome {
+    width: 44%;
+    float: right;
+    padding: 2% 4% 2% 2%;
+}
+
+.welcome-area .right-welcome img {
+    width: 470px;
+    height: 305px;
+    border-radius: 4px;
+}
+
+/* ********************* Service Area ************************ */
+
+.service-area {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.service-area .inner-service {
+    overflow: hidden;
+}
+
+.service-area .inner-service h2.title {
+    text-align: center;
+    color: #6a3144;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.service-area .inner-service p.sub-title{
+    text-align: center;
+    font-size: 18px;
+}
+
+.service-area .main-service {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.service-area .child-service {
+    width: 225px;
+    padding: 80px 60px 80px 80px;
+    float: left;
+    position: relative;
+    transition: 0.5s;
+}
+
+.service-area .child-service:hover {
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #ddd;
+}
+
+.service-area .child-service h3 {
+    color: #97455f25;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.service-area .child-service h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.service-area .child-service h4 a {
+    color: #523827;
+}
+
+.service-area .child-service p {
+    color: #000000;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+/* ********************* Contact Area ************************ */
+
+.contact-area {
+    background: url('images/contact.jpg');
+    background-size: cover;
+    background-color: #101f38;
+    padding: 50px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-area .inner-contact {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact-area .inner-contact h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-area .main-contact-form {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20PX;
+    text-align: center;
+}
+
+.contact-area .main-contact-form input {
+    background: #fff;
+    width: 42%;
+    padding: 15px 3%;
+    margin: 0 1% 2%;
+    border: 0;
+    float: left;
+    border-radius: 5px;
+}
+
+.contact-area .main-contact-form textarea {
+    width: 92%;
+    border-radius: 5px;
+    min-height: 100px;
+    background: #fff;
+    border: 0;
+    margin: 0 1% 2%;
+    padding: 15px 3%;
+}
+
+.contact-area .main-contact-form input[type="submit"] {
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: #97455f;
+    width: 250px;
+    margin: 0 auto;
+    float: none;
+    font-size: 21px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.contact-area .main-contact-form input[type="submit"]:hover {
+    background-color: #6a3144;
+}
+
+/* ********************* Footer Area ************************ */
+
+.footer-area {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    
+}
+
+.footer-area .inner-footer {
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer-area .footer-logo {
+    width: 420px;
+    max-width: 80%;
+    margin: 0 auto 20px;    
+}
+
+.footer-area .copyright-area {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-area .copyright-area p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #6a3144;
+    margin-bottom: 0;
+}

@@ -1,0 +1,558 @@
+/*
+    orange color : #e67e22
+*/
+
+
+/*----------------------------------------*/
+/*BASIC SETUP*/
+/*----------------------------------------*/
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix { zoom :1 }
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*----------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*----------------------------------------*/
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding-top: 1%;
+}
+
+/*-------HEADINGS-------*/
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top:  0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 160%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #e67e22;
+    content: " ";
+}
+
+h3 {
+    font-size: 90%;
+    margin-bottom: 15px;
+}
+
+/*------PARAGRAPHS--------*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 85%;
+    line-height: 145%;
+}
+
+/*------ICONS----------*/
+
+.icon-big {
+    font-size: 300%;
+    color: #e67e22;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 6px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+
+/*------LINKS----------*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    border-bottom: 1px solid transparent;
+    color: #555;
+}
+
+/*------BUTTONS--------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #e67e22;
+}
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    border: 1px solid #cf6d17;
+}
+
+/*----------------------------------------*/
+/*HEADER*/
+/*----------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    margin-top: 55px;
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/*----------------------------------------*/
+/*FEATURES*/
+/*----------------------------------------*/
+.section-features .long-copy {
+    margin-bottom: 25px;
+}
+
+/*----------------------------------------*/
+/*MEALS*/
+/*----------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    width: 100%;
+    list-style: none;
+}
+
+.meals-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*----------------------------------------*/
+/*HOQ IT WORKS*/
+/*----------------------------------------*/
+
+.section-steps {
+    background-color: #f2f2f2;
+}
+
+.steps-box:first-child {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    margin-top: 90px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 40px;
+    padding-right: 20%;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 70px;
+}
+
+.works-step div {
+    color: #e67e22;
+    display: inline-block;
+    border: 1px solid #e67e22;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    float: left;
+    font-size: 180%;
+    margin-right: 25px;
+    padding-top: 4px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 25px;
+}
+
+/*----------------------------------------*/
+/*CITIES*/
+/*----------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    padding-top: 1%;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+/*----------------------------------------*/
+/*TESTIMONIALS*/
+/*----------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/*----------------------------------------*/
+/*PLANS*/
+/*----------------------------------------*/
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 5%;
+    width: 90%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    
+}
+
+.plan-price {
+    font-size: 300%;
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+/*----------------------------------------*/
+/*FORM*/
+/*----------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+form .row {
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*----------------------------------------*/
+/*FOOTER*/
+/*----------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: #888;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a: link,
+.social-links li a: visited {
+    font-size: 180%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5999;
+}
+
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+.ion-logo-googleplus:hover {
+    color: #dd4b39;   
+}
+
+.ion-logo-instagram:hover {
+    color: #e4405f;
+}
+
+footer p {
+    text-align: center;
+    color: #888;
+    margin-top: 30px;
+}
