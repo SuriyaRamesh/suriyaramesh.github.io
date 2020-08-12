@@ -1,17 +1,17 @@
 
 
-var images = [
-  { "src" : "images/img1.png" },
-    { "src" : "images/image2.png" },
-    { "src" : "images/img3.png" },
-    { "src" : "images/img4.png" },
-    { "src" : "images/img5.png" },
-    { "src" : "images/img6.png" },
-    { "src" : "images/img7.png" },
-    { "src" : "images/img8.png" },
-    { "src" : "images/img1.png" },
-    { "src" : "images/image2.png" }
-];
+//var images = [
+//  { "src" : "../images/img1.png" },
+//    { "src" : "../images/img7.png" },
+//    { "src" : "../images/img3.png" },
+//    { "src" : "../images/img4.png" },
+//    { "src" : "../images/img5.png" },
+//    { "src" : "../images/img6.png" },
+//    { "src" : "../images/img7.png" },
+//    { "src" : "../images/img8.png" },
+//    { "src" : "../images/img1.png" },
+//    { "src" : "../images/img3.png" }
+//];
 
 const url = 'http://starlord.hackerearth.com/recipe';
   fetch(url)
@@ -33,7 +33,8 @@ const url = 'http://starlord.hackerearth.com/recipe';
 
             let cardImage = document.createElement('img');
             cardImage.className = 'card-img-top';
-            cardImage.src = images[imageIndex++].src;
+//            cardImage.src = images[imageIndex++].src;
+            cardImage.src = recipe.image;
             
             let cardBody = document.createElement('div');
             cardBody.className = 'card-body';

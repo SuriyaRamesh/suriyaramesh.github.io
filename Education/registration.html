@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Education - Register here</title>  
+      
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">  
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css"> 
+      
+    <script type="text/javascript">    
+        
+      function showSubjectList() {
+        var professional = document.getElementById("professional");
+        var subject = document.getElementById("subjectList");
+        subject.style.display = professional.checked ? "block" : "none";  
+        var country = document.getElementById("countryList");
+        country.style.display = "none";
+      }
+      function showCountryList() {
+        var follower = document.getElementById("follower");
+        var country = document.getElementById("countryList");
+        country.style.display = follower.checked ? "block" : "none";
+        var subject = document.getElementById("subjectList");
+        subject.style.display = "none";
+      }
+    </script>  
+      
+  </head>
+  <body>
+       
+      <nav class="navbar top-bar navbar-expand-lg navbar-light py-0 bg-light shadow">
+          <a class="navbar-brand" href="#">Logo</a>
+        </nav>
+      
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-5 col-lg-4 shadow m-4 m-md-5">
+              <h1 class="text-center p-4 border-bottom font-weight-bold text-info">Register</h1>
+                
+            <form class="form-horizontal p-2 p-md-2 px-lg-4 py-lg-4" role="form" id="registerForm" onsubmit="return mysubmit();">
+              <div class="form-group">
+                <div class="col-md-12 p-0">
+                  <input class="form-control" type="text" value="" placeholder="Name">
+                  </div>
+              </div>    
+              <div class="form-group">
+                <div class="col-md-12 p-0">
+                  <input class="form-control" type="text" value="" placeholder="Email ID">
+                  </div>
+              </div>
+              <div class="form-check form-check-inline col-6 col-md-6 m-0 pl-3 pl-sm-2 pl-md-4 pl-lg-4 pl-xl-5 mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="professional" value="option1" onclick="showSubjectList()">
+                <label class="form-check-label" for="professional">
+                    Professional
+                </label>
+              </div>
+              <div class="form-check form-check-inline col-5 col-md-5 col-lg-5 m-0 p-0 pl-4 mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="follower" value="option2" onclick="showCountryList()">
+                <label class="form-check-label" for="follower">
+                    Follower
+                </label>
+              </div>
+              <select class="form-control mb-3" id="countryList" style="display: none">
+                  <option disabled> -- Select Country -- </option>
+                  <option>Australia</option>
+                  <option>Canada</option>
+                  <option>Germany</option>
+                  <option>India</option>
+                  <option>Japan</option>
+                  <option>Malaysia</option>
+                  <option>Singapore</option>
+                  <option>United Arab Emirates</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+              </select>
+
+              <select class="form-control mb-3" id="subjectList" style="display: none">
+                  <option disabled> -- Select Subject -- </option>
+                  <option>Subject1</option>
+                  <option>Subject2</option>
+                  <option>Subject3</option>
+                  <option>Subject4</option>
+                  <option>Subject5</option>
+                  <option>Subject6</option>
+                  <option>Subject7</option>
+                  <option>Subject8</option>
+                  <option>Subject9</option>
+                  <option>Subject10</option>
+              </select>        
+                
+              <div class="form-group">
+                <div class="col-md-12 p-0">
+                  <input class="form-control" type="password" value="" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12 p-0">
+                    <input class="form-control" type="password" value="" placeholder="Confirm Password">         
+                </div>
+              </div>  
+              <div class="form-group">
+                <div class="col-md-12 text-center">
+                  <input name="submit" type="submit" class="btn btn-primary" onclick="subjectPage()" value="Register">
+                </div>
+              </div>
+            </form>    
+        </div>
+      </div>
+    </div>
+    <hr>  
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

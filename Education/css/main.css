@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-size: 31px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.navbar-brand:focus {
+    background: none;
+}
+
+.profile-link:focus {
+    background: none;
+}
+
+/*
+.nav .nav-item {
+    margin: 4px;
+}
+*/
+
+.subjects-nav .nav-item .nav-link img {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+.nav-link {
+    font-size: 13px;
+}
+
+.nav-item a:hover, a:focus {
+        background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 4px solid black;
+}
+
+.subjects-nav ul.navbar-nav {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.subjects-nav ul.navbar-nav li {
+    display: inline-block;
+    float: none;
+}
+
+
+@media screen and (max-width: 320px) {
+    .profile-card {
+        display: none!important;
+    }
+    .search-bar {
+        width: 80vw!important;
+    }
+    .mobile-profile-intro img {
+        width: 70px!important;
+        height: 70px!important;
+    }
+    
+    .mobile-profile-intro .intro {
+        padding-left: 13px!important;
+        padding-right: 0px!important;
+    }
+    .mobile-profile-card .intro h5{
+        font-size: 12px!important;
+    }
+
+    .mobile-profile-card .intro h6, p {
+        font-size: 12px!important;
+        margin-bottom: 0px!important;
+    }
+    .mobile-profile-intro .intro ul {
+        margin-left: 7px!important;
+    }
+    
+    .mobile-profile-card .intro li {
+        font-size: 10px!important;
+    }
+
+    .mobile-profile-details {
+        padding: 0!important;
+    }
+    .teacher-info {
+        padding-top: 5px;
+    }
+    .mobile-profile-details .teacher-info button {
+        margin-right: 0px!important;
+        font-size: 10px!important;
+        padding: 2px 5px!important;
+    }
+    
+    .login-form .field {
+        padding: 0px!important;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    
+    .profile-card {
+        display: none!important;
+    }
+    
+    .search-bar {
+        width: 80vw!important;
+    }
+    
+    .mobile-profile-card {
+        margin: 0px 15px 15px 15px!important;
+    }
+    
+    .mobile-profile-intro img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .mobile-profile-card .intro ul {
+        margin-left: 20px!important;
+    }
+
+    .mobile-profile-details .teacher-info button {
+        margin-right: 0px!important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .top-bar .nav .nav-link {
+        padding: 7px!important;
+    }
+    .top-bar .nav .nav-link .btn {
+        font-size: 12px!important;
+        padding: 5px!important;
+    }
+    .top-bar .nav .nav-link i {
+        font-size: 15px!important;
+    }
+    .top-bar .nav .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-btn {
+        padding: 5px 8px!important;
+        margin-left: 5px!important;
+    }
+    .menu-btn span {
+        width: 22px;
+        height: 22px;
+    }
+    .profile-card {
+        display: none!important;
+    }
+    .subjects-nav .nav-item {
+        margin: 2px;
+    }
+    .subjects-nav .nav-item .nav-link img {
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
+    .nav-link {
+        font-size: 8px;
+    }
+    .search-bar {
+        width: 80vw!important;
+    }
+    .mobile-profile-card .intro h5{
+        font-size: 14px;
+    }
+
+    .mobile-profile-card .intro h6 {
+        font-size: 12px;
+    }
+
+    .mobile-profile-card .intro li {
+        font-size: 12px;
+    }
+
+    .mobile-profile-details {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .profile-card {
+        display: none!important;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .subjects-nav .nav-item {
+        margin: 3px;
+    }
+    .subjects-nav .nav-item .nav-link img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 3px;
+    }
+    .nav-link {
+        font-size: 10px;
+    }
+    .profile-card {
+        width: 85vw!important;
+        background-color: azure;
+    }
+    
+    .profile-intro img {
+        width: 125px;
+        height: 125px;
+    }
+    .profile-intro h4 {
+        font-size: 18px;
+    }
+    .profile-intro h5 {
+        font-size: 16px;
+    }
+    .profile-details {
+        padding: 0!important;   
+    }
+    .teacher-info {
+        font-size: 15px;
+    }
+    .teacher-info button {
+        padding: 5px 8px!important;
+        font-size: 15px;
+        margin-top: 0!important;
+    }
+    .profile-rating {
+        font-size: 14px!important;
+        padding: 0!important;
+        padding-right: 15px!important;
+    }
+    .profile-rating .btn {
+        padding: 5px!important;
+    }
+    
+}
+
+@media (min-width: 992px){
+    .profile-intro h4 {
+        font-size: 18px!important;
+    }
+    .profile-intro h5 {
+        font-size: 16px;
+    } 
+}
