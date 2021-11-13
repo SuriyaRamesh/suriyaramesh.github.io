@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+	<title>V1 Los Angeles Mountains</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+            <img src="./assets/images/Logo.png" alt="Logo" class="logo">
+            <ul class="nav-menu">
+                <li><a href="#history">01. History</a></li>
+                <li><a href="#climb">02. Team</a></li>
+            </ul>
+        </nav>
+        <h1 class="header-title">LOSANGELES<br><span>MOUNTAINS</span></h1>
+	</header>
+	<div class="sticky-nav-bar">
+		<div id="logowithtitle">
+			<img src="./assets/images/Logo.png" alt="Logo" class="logo">
+			<h1>LOSANGELES<br><span>MOUNTAINS</span></h1>
+		</div>
+		
+        <ul class="sticky-nav-menu">
+                <li><a href="#history">01. History</a></li>
+                <li><a href="#climb">02. Team</a></li>
+            </ul>
+    </div>
+
+    <div id="history">
+    	<div class="history-text">
+                    <h3>01.</h3>
+                    <h4>HISTORY</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+                </div>
+        <div class="image-slider">
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+		  <div class="carousel-cell"><img src="assets/images/slide1.png" alt="slide1"></div>
+		  <div class="carousel-cell"><img src="assets/images/slide2.png" alt="slide1"></div>
+		  <div class="carousel-cell"><img src="assets/images/slide1.png" alt="slide1"></div>
+		  <div class="carousel-cell"><img src="assets/images/slide2.png" alt="slide1"></div>
+		  <div class="carousel-cell"><img src="assets/images/slide1.png" alt="slide1"></div>
+		</div>
+		</div>	
+    </div>
+    <div id="climb">
+    	<div class="history-text">
+                    <h3>02.</h3>
+                    <h4>CLIMB</h4>
+                    <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+                </div>
+    </div>
+
+    <div id="mountains">
+
+    	<div class="tab">
+		  <button class="tablinks" onclick="openSchedule(event, 'mountain1')">MOUNTAIN 1</button>
+		  <button class="tablinks" onclick="openSchedule(event, 'mountain2')">MOUNTAIN 2</button>
+		</div>
+
+		<div id="mountain1" class="tabcontent">
+			<h3>SCHEDULE</h3>
+			<table>
+			  <tr><td>17 Nov 2016</td><td>Vestibulum viverra</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>13 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td>28 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>9 Feb 2016</td><td>Vestibulum viverr</td></tr>
+			</table>
+		</div>
+
+		<div id="mountain2" class="tabcontent">
+		    <h3>SCHEDULE</h3>
+			<table>
+			  <tr><td>25 Nov 2016</td><td>Vestibulum viverra</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>28 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td>18 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>7 Jan 2016</td><td>Vestibulum viverr</td></tr>
+			</table>
+		</div>
+	</div>
+
+    <div id="mountains-accordion">
+    	<button class="mountain-accordion">MOUNTAIN 1</button>
+		<div class="panel">
+		  <h3>SCHEDULE</h3>
+			<table>
+			  <tr><td>17 Nov 2016</td><td>Vestibulum viverra</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>13 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td>28 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>9 Feb 2016</td><td>Vestibulum viverr</td></tr>
+			</table>
+		</div>
+		<button class="mountain-accordion">MOUNTAIN 2</button>
+		<div class="panel">
+		  <h3>SCHEDULE</h3>
+			<table>
+			  <tr><td>25 Nov 2016</td><td>Vestibulum viverra</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>28 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td>18 Dec 2016</td><td>Vestibulum viverr</td></tr>
+			  <tr><td></td><td></td></tr>
+			  <tr><td>7 Jan 2016</td><td>Vestibulum viverr</td></tr>
+			</table>
+		</div>
+    </div >
+    	
+    
+
+    <footer>
+    	<div id="logowithtitle" style="">
+			<img src="./assets/images/Logo.png" alt="Logo" class="logo">
+			<h1 style="color: #d3cdcd8f!important;">LOSANGELES<br><span>MOUNTAINS</span></h1>
+		</div>
+		<h5>COPYRIGHT 2016. &nbsp;&nbsp;ALL RIGHTS RESERVED.</h5>
+    </footer>
+
+	
+
+
+	<script>
+	function openSchedule(evt, val) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(val).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+
+	var acc = document.getElementsByClassName("mountain-accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	      panel.style.display = "none";
+	    } else {
+	      panel.style.display = "block";
+	    }
+	  });
+	}
+	</script>
+	<script src="index.js"></script>
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+</html>

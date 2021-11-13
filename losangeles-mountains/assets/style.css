@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+/*html {
+  scroll-padding-top: 70px;
+}
+.logo {
+    height: 40px;
+    width: 40px;
+}*/
+header, #mountains {
+  background-size: cover;
+  background-position:center;
+}
+nav, .sticky-nav-bar, footer {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu, .sticky-nav-menu {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    /*font-size: 16px;*/
+    text-transform: uppercase;
+    font-family: 'Lato', italic;
+    font-weight: bold;
+    /*margin: 0 30px;*/
+}
+a {
+  text-decoration: none;
+}
+
+/* ------------ Header --------------*/
+header {
+    background-image: url('images/header-bg.png');
+    /*height: 625px;*/
+    text-align: center;
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.nav-menu li {
+    border-bottom: 2px solid white;
+}
+.nav-menu li a {
+    color: white;
+    /*line-height: 30px;*/
+}
+.header-title {
+    font-family: 'Bebas Neue', cursive;
+    color: #686767;
+    /*font-size: 130px;
+    margin-top: 135px;
+    line-height: 107px;*/
+}
+.header-title span {
+	color: #253854f5;
+	/*font-size: 142px;*/
+}
+
+/* ------------ Sticky Navigation bar --------------*/
+.sticky-nav-bar{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 8px #888888;
+    z-index: 1;
+}
+#logowithtitle h1{
+    font-family: 'Bebas Neue', cursive;
+		color: #3e3e3e;
+    /*font-size: 25px;
+    line-height: 25px;*/
+    display: inline-block;
+}
+#logowithtitle span {
+    /*font-size: 26px;*/
+    color: #253854f5;
+}
+.sticky-nav-menu li {
+		border-bottom: 2px solid black;
+		/*line-height: 45px;
+		height: 40px;*/
+}
+.sticky-nav-menu li a {
+	color: black;
+}
+
+/* ------------ History Section --------------*/
+#history {
+    background: url('images/history-bg1.jpg');
+    /*height: 800px;*/
+    box-shadow: 5px 5px 8px #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.history-text {
+	  /*padding: 30px 75px;*/
+}
+.history-text h3, .history-text h4 {
+    font-weight: bold;
+    display: inline-block;
+}
+.history-text h3{
+	  color: #2e2c2c59;
+    /*font-size: 150px;*/
+    font-family: 'Oswald', sans-serif;
+    /*line-height: 130px;*/
+}
+.history-text h4 {
+	 /*font-size: 40px;*/
+    color: #37475ef5;
+    position: relative;
+    top: -30px;
+    left: -35px;	
+}
+.history-text p {
+	  color: #000000ad;
+    /*font-size: 20px;*/
+    margin: 0 100px;
+}
+
+/* ------------ Carousel Section --------------*/
+.image-slider {
+	  width: 100%;
+	  background-color: #37475eb5;
+	  /*padding: 30px;*/
+}
+.carousel {
+    width: 70%;
+    margin: auto;
+}
+.carousel-cell {
+    width: 35%;
+    /*height: 200px;*/
+    /*margin-right: 10px;*/
+    counter-increment: gallery-cell;
+}
+.carousel-cell img {
+	  width: 100%;
+	  height: 100%;
+}
+
+/* ------------ Team Section --------------*/
+#climb h3 {
+	  /*line-height: 125px;*/
+}
+
+/* ------------ Mountains Section --------------*/
+#mountains-accordion {
+		display: none;
+}
+#mountains {
+	  background: url('images/mount-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    /*height: 550px;*/
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #37475ef5;
+    /*padding: 0 75px;*/
+}
+.tab button {
+    background-color: inherit;
+    font-weight: bold;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /*padding: 14px 16px;*/
+    transition: 0.3s;
+    /*font-size: 17px;  */
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+	  background-color: #f3efefbd;
+	  /*padding: 10px;*/
+    display: none;
+    /*padding: 6px 12px;*/
+    width: 30%;
+    /*margin: 100px 160px;*/
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.tabcontent h3 {
+	color: #37475ef5;
+	/*font-size: 35px;*/
+	/*margin: 5px;*/
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  text-align: left;
+  /*padding: 8px;*/
+}
+
+/* ------------ Footer Section --------------*/
+footer {
+	background-color: #37475ef5;
+}
+footer h5 {
+	font-family: 'Lato', italic;
+	/*line-height: 50px;*/
+}
+footer h1 span, footer h5 {
+	color: #d3cdcd8f!important;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 599px) {
+html {
+  scroll-padding-top: 35px;
+}
+.logo {
+    height: 23px;
+}
+header, #mountains {
+  background-size: cover;
+  background-position:center;
+}
+nav, .sticky-nav-bar, footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 35px;
+}
+li {
+    display: inline-block;
+    font-size: 8px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', italic;
+    font-weight: bold;
+}
+.nav-menu, .sticky-nav-menu {
+    list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ------------ Header --------------*/
+header {
+  background-image: url('images/header-bg.png');
+    height: 225px;
+    text-align: center;
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.nav-menu li {
+    border-bottom: 1px solid white;
+}
+.nav-menu li a {
+    color: white;
+    line-height: 15px;
+}
+ .header-title {
+    font-family: 'Bebas Neue', cursive;
+    color: #3e3e3e;
+    font-size: 40px;
+    margin-top: 50px;
+    line-height: 35px;
+}
+.header-title span {
+  color: #253854f5;
+  font-size: 45px;
+}
+
+/* ------------ Sticky Navigation bar --------------*/
+.sticky-nav-bar{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 8px #888888;
+    z-index: 1;
+}
+#logowithtitle h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #3e3e3e;
+    font-size: 13px;
+    line-height: 13px;
+    display: inline-block;
+}
+#logowithtitle span {
+    font-size: 14px;
+    color: #253854f5;
+}
+.sticky-nav-menu li {
+    border-bottom: 1px solid black;
+    line-height: 15px;
+    height: 15px;
+}
+.sticky-nav-menu li a {
+  color: black;
+}
+/* ------------ History Section --------------*/
+#history {
+    background: url('images/history-bg1.jpg');
+    height: 300px;
+    box-shadow: 5px 5px 8px #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.history-text {
+    padding: 5px 35px;
+}
+.history-text h3, .history-text h4 {
+    font-weight: bold;
+    display: inline-block;
+}
+.history-text h3{
+    font-family: 'Oswald', sans-serif;
+    color: #2e2c2c59;
+    font-size: 50px;
+    line-height: 50px;
+}
+.history-text h4 {
+   font-size: 15px;
+   color: #37475ef5;
+   position: relative;
+    top: -10px;
+    left: -15px;  
+}
+.history-text p {
+    color: #000000ad;
+    font-size: 10px;
+    margin: 0 28px;
+}
+
+/* ------------ Carousel Section --------------*/
+.image-slider {
+    padding: 10px;
+    width: 100%;
+    background-color: #37475eb5;
+}
+.carousel {
+    width: 70%;
+    margin: auto;
+}
+.carousel-cell {
+    counter-increment: gallery-cell;
+    width: 35%;
+    height: 70px;
+    margin-right: 5px;
+}
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+}
+.flickity-prev-next-button {
+  height: 22px !important;
+  width: 22px !important;
+}
+.flickity-prev-next-button.previous {
+    left: 5px !important;
+}
+.flickity-prev-next-button.next {
+    right: 5px !important;
+}
+.flickity-page-dots {
+  bottom: -10px !important;
+  color: white !important;
+}
+.flickity-page-dots .dot {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+
+/* ------------ Team Section --------------*/
+#climb h3 {
+    line-height: 40px;
+}
+
+
+/* ------------ Mountains Section --------------*/
+	#mountains {
+		display: none;
+	}
+	#mountains-accordion {
+		display: block;
+		background: url('images/mount-bg1.jpg');
+    min-height: 100px;
+	  height: auto;
+	  background-size: cover;
+	  box-shadow: 5px 5px 8px #c3c3c3;
+    text-align: center;
+    padding: 10px;
+	}
+	.mountain-accordion {
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 12px;
+    font-weight: bold;
+	  width: 50%;
+	  border: 1px solid white;
+	  outline: none;
+	  font-size: 10px;
+	  transition: 0.4s;
+    text-align: center;
+	}
+	.active, .mountain-accordion:hover {
+	  background-color: #ccc; 
+	}
+	.panel {
+	  padding: 0 3px;
+	  display: none;
+    margin: auto;
+	  background-color: white;
+	  overflow: hidden;
+    width: 50%;
+	}
+  .panel h3 {
+  font-size: 10px;
+  margin: 1px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  text-align: left;
+  padding: 2px;
+    font-size: 10px;
+}
+
+/* ------------ Footer Section --------------*/
+footer {
+  background-color: #37475ef5;
+}
+footer h5 {
+  font-family: 'Lato', italic;
+  font-size: 7px;
+  line-height: 18px;
+}
+footer h1 span, footer h5 {
+  color: #d3cdcd8f!important;
+}
+
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+  scroll-padding-top: 50px; 
+}
+.logo {
+    height: 30px;
+    width: 30px;
+}
+nav, .sticky-nav-bar, footer {
+    padding: 8px 35px;
+}
+li {
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+
+header {
+    height: 450px;
+}
+.nav-menu li a {
+    color: white;
+    line-height: 20px;
+}
+.header-title {
+    font-size: 70px;
+    margin-top: 120px;
+    line-height: 70px;
+}
+.header-title span {
+  color: #253854f5;
+  font-size: 73px;
+}
+
+
+#logowithtitle h1{
+    font-size: 18px;
+    line-height: 18px;
+}
+#logowithtitle span {
+    font-size: 20px;
+}
+.sticky-nav-menu li {
+    border-bottom: 2px solid black;
+    line-height: 20px;
+    height: 20px;
+}
+
+
+#history {
+    height: 500px;
+}
+.history-text {
+    padding: 8px 35px;
+}
+.history-text h3{
+    font-size: 100px;
+    line-height: 90px;
+}
+.history-text h4 {
+   font-size: 30px;
+    top: -20px;
+    left: -25px;  
+}
+.history-text p {
+  text-align: justify;
+    font-size: 13px;
+    margin: 0 80px;
+}
+
+
+.image-slider {
+    padding: 15px;
+}
+.carousel {
+    width: 70%;
+    margin: auto;
+}
+.carousel-cell {
+    width: 35%;
+    height: 125px;
+    margin-right: 7px;
+    counter-increment: gallery-cell;
+}
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+}
+.flickity-prev-next-button {
+  height: 25px !important;
+  width: 25px !important;
+}
+.flickity-prev-next-button.previous {
+    left: 6px !important;
+}
+.flickity-prev-next-button.next {
+    right: 6px !important;
+}
+.flickity-page-dots {
+  bottom: -10px !important;
+  color: white !important;
+}
+.flickity-page-dots .dot {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+#climb h3 {
+    line-height: 85px;
+}
+
+
+#mountains-accordion {
+    display: none;
+}
+#mountains {
+    height: 400px;
+}
+.tab {
+    padding: 0 35px;
+}
+.tab button {
+    padding: 10px 12px;
+    font-size: 13px;  
+}
+.tabcontent {
+    padding: 3px 6px;
+    width: 45%;
+    margin: 100px 160px;
+}
+.tabcontent h3 {
+  font-size: 20px;
+  margin: 2px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  text-align: center;
+  padding: 6px;
+}
+
+
+footer {
+  background-color: #37475ef5;
+}
+footer h5 {
+  font-family: 'Lato', italic;
+  line-height: 37px;
+}
+footer h1 span, footer h5 {
+  color: #d3cdcd8f!important;
+}
+
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {
+.header-title {
+    font-size: 90px;
+    margin-top: 100px;
+    line-height: 80px;
+}
+.header-title span {
+  font-size: 97px;
+}
+
+
+#logowithtitle h1{
+    font-size: 19px;
+    line-height: 18px;
+}
+#logowithtitle span {
+    font-size: 20px;
+}
+.sticky-nav-menu li {
+    border-bottom: 2px solid black;
+    line-height: 33px;
+    height: 26px;
+}
+
+
+
+.history-text p {
+  text-align: justify;
+    font-size: 15px;
+    margin: 0 80px;
+}
+
+
+
+#mountains-accordion {
+    display: none;
+}
+
+.tab button {
+    padding: 10px 12px;
+    font-size: 15px;  
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+  scroll-padding-top: 60px;
+}
+.logo {
+    height: 40px;
+    width: 40px;
+}
+nav, .sticky-nav-bar, footer {
+    padding: 15px 75px;
+}
+li {
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+/* ------------ Header --------------*/
+header {
+    height: 625px;
+}
+.nav-menu li {
+    border-bottom: 2px solid white;
+}
+.nav-menu li a {
+    line-height: 30px;
+}
+.header-title {
+    font-size: 130px;
+    margin-top: 135px;
+    line-height: 107px;
+}
+.header-title span {
+  font-size: 142px;
+}
+
+/* ------------ Sticky Navigation bar --------------*/
+#logowithtitle h1{
+    font-size: 25px;
+    line-height: 25px;
+}
+#logowithtitle span {
+    font-size: 26px;
+}
+.sticky-nav-menu li {
+    border-bottom: 2px solid black;
+    line-height: 45px;
+    height: 40px;
+}
+
+
+/* ------------ History Section --------------*/
+#history {
+    height: 800px;
+}
+.history-text {
+    padding: 30px 75px;
+}
+.history-text h3{
+    font-size: 150px;
+    line-height: 130px;
+}
+.history-text h4 {
+   font-size: 40px;
+    position: relative;
+    top: -30px;
+    left: -35px;  
+}
+.history-text p {
+    font-size: 20px;
+    margin: 0 100px;
+}
+
+/* ------------ Carousel Section --------------*/
+.image-slider {
+    padding: 30px;
+}
+.carousel {
+    width: 70%;
+}
+.carousel-cell {
+    width: 35%;
+    height: 200px;
+    margin-right: 10px;
+}
+
+/* ------------ Team Section --------------*/
+#climb h3 {
+    line-height: 125px;
+}
+
+/* ------------ Mountains Section --------------*/
+#mountains-accordion {
+    display: none;
+}
+#mountains {
+    height: 550px;
+}
+.tab {
+    padding: 0 75px;
+}
+.tab button {
+    padding: 14px 16px;
+    font-size: 17px;  
+}
+.tabcontent {
+    background-color: #f3efefbd;
+    padding: 8px;
+    display: none;
+    padding: 6px 12px;
+    width: 30%;
+    margin: 100px 160px;
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.tabcontent h3 {
+  color: #37475ef5;
+  font-size: 35px;
+  margin: 5px;
+}
+table {
+  width: 100%;
+}
+td {
+  text-align: left;
+  padding: 7px;
+  font-size: 18px;
+}
+
+/* ------------ Footer Section --------------*/
+footer {
+  background-color: #37475ef5;
+}
+footer h5 {
+  font-family: 'Lato', italic;
+  line-height: 50px;
+}
+footer h1 span, footer h5 {
+  color: #d3cdcd8f!important;
+}
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {
+    html {
+  scroll-padding-top: 95px;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+}
+nav, .sticky-nav-bar, footer {
+    padding: 20px 85px;
+}
+li {
+    font-size: 18px;
+    margin: 0 35px;
+}
+
+/* ------------ Header --------------*/
+/*header {
+    height: 645px;
+}
+.nav-menu li a {
+    line-height: 35px;
+}
+.header-title {
+    font-size: 145px;
+    margin-top: 135px;
+    line-height: 115px;
+}
+.header-title span {
+  font-size: 156px;
+}
+*/
+/* ------------ Sticky Navigation bar --------------*/
+/*#logowithtitle h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+#logowithtitle span {
+    font-size: 31px;
+}
+.sticky-nav-menu li {
+    border-bottom: 2px solid black;
+    line-height: 50px;
+    height: 45px;
+}
+*/
+
+/* ------------ History Section --------------*/
+/*#history {
+    height: 800px;
+}
+.history-text {
+    padding: 20px 85px;
+}
+.history-text h3{
+    font-size: 180px;
+    line-height: 150px;
+}
+.history-text h4 {
+   font-size: 45px;
+    position: relative;
+    top: -30px;
+    left: -42px;  
+}
+.history-text p {
+    font-size: 23px;
+    margin: 0 100px;
+}
+*/
+
+
+/* ------------ Team Section --------------*/
+/*#climb h3 {
+    line-height: 135px;
+}*/
+
+/* ------------ Mountains Section --------------*/
+/*#mountains-accordion {
+    display: none;
+}
+#mountains {
+    height: 550px;
+}
+.tab {
+    padding: 0 85px;
+}
+.tab button {
+    padding: 15px 18px;
+    font-size: 20px;  
+}
+.tabcontent {
+    text-align: center;
+    padding: 6px 12px;
+    width: 30%;
+    margin: 100px 160px;
+    box-shadow: 5px 5px 8px #c3c3c3;
+}
+.tabcontent h3 {
+  color: #37475ef5;
+  font-size: 35px;
+  margin: 5px;
+}
+table {
+  width: 100%;
+}
+td {
+  text-align: center;
+  padding: 7px;
+  font-size: 19px;
+}
+*/
+/* ------------ Footer Section --------------*/
+
+/*footer h5 {
+  font-family: 'Lato', italic;
+  line-height: 60px;
+  font-size: 20px;
+}
+footer h1 span, footer h5 {
+  color: #d3cdcd8f!important;
+}
+}*/
